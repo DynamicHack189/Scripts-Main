@@ -1,3 +1,3 @@
-if game.GameId == 5750914919 then -- Fisch
+if game.GameId == 16732694052 then -- Fisch
    loadstring(game:HttpGet("https://raw.githubusercontent.com/DynamicHack189/Scripts-Main/refs/heads/main/Ficsh%20Source"))()
 end
