@@ -31,6 +31,7 @@ local settingsTable = {
 		usageAnalytics = {Type = 'toggle', Value = true, Name = 'Anonymised Analytics'},
 	}
 }
+getgenv().DISABLE_RAYFIELD_REQUESTS = false
 
 local HttpService = game:GetService("HttpService")
 local RunService = game:GetService("RunService")
@@ -175,7 +176,6 @@ end
 local RayfieldLibrary = {
 	Flags = {},
 	Theme = {
-    list = {"Default","Ocean","AmberGlow","Light","Amethyst","Green","Bloom","DarkBlue","serenity"}
 		Default = {
 			TextColor = Color3.fromRGB(240, 240, 240),
 
