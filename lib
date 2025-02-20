@@ -1841,10 +1841,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	local Window = {}
 
         function Window:ChangeTheme(Theme)
-local SelectedTheme 
-	if typeof(Theme) == 'string' then
-		SelectedTheme = RayfieldLibrary.Theme[Theme]
-	end
+        local SelectedTheme = RayfieldLibrary.Theme[Theme]
 
 	Rayfield.Main.BackgroundColor3 = SelectedTheme.Background
 	Rayfield.Main.Topbar.BackgroundColor3 = SelectedTheme.Topbar
