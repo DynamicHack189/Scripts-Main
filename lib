@@ -551,10 +551,8 @@ local RayfieldLibrary = {
 			InputStroke = Color3.fromRGB(180, 190, 200),
 			PlaceholderColor = Color3.fromRGB(150, 150, 150)
 		},
-	}
-}
-
-function RayfieldLibrary.ChangeTheme(Theme)
+	},
+ChangeTheme = function(Theme)
 	if typeof(Theme) == 'string' then
 		SelectedTheme = RayfieldLibrary.Theme[Theme]
 	elseif typeof(Theme) == 'table' then
@@ -599,6 +597,8 @@ function RayfieldLibrary.ChangeTheme(Theme)
 		end
 	end
 end
+}
+
 
 -- Services
 local UserInputService = game:GetService("UserInputService")
