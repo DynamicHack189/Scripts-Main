@@ -1568,9 +1568,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 	end
 
 	if Settings.Theme then
-		local success, result = pcall(RayfieldLibrary.ChangeTheme, Settings.Theme)
+		local success, result = pcall(ChangeTheme, Settings.Theme)
 		if not success then
-			local success, result2 = pcall(RayfieldLibrary.ChangeTheme, 'Default')
+			local success, result2 = pcall(ChangeTheme, 'Default')
 			if not success then
 				warn('CRITICAL ERROR - NO DEFAULT THEME')
 				print(result2)
