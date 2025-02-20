@@ -550,7 +550,7 @@ local RayfieldLibrary = {
 			InputBackground = Color3.fromRGB(220, 230, 240),
 			InputStroke = Color3.fromRGB(180, 190, 200),
 			PlaceholderColor = Color3.fromRGB(150, 150, 150)
-		},
+		}
 	},
 ChangeTheme = function(Theme)
 	if typeof(Theme) == 'string' then
