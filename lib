@@ -1841,11 +1841,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 	local Window = {}
 
         function Window:ChangeTheme(Theme)
-	if Theme then
 print(Theme)
         local s,e = pcall(ChangeName,Theme)
 print("s")
-	end
         end
         
 	function Window:CreateTab(Name, Image, Ext)
