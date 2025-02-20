@@ -1842,16 +1842,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 
         function Window:ChangeTheme(Theme)
 	if Theme then
-		local success, result = pcall(ChangeTheme, Theme)
-		if not success then
-			local success, result2 = pcall(ChangeTheme, 'Default')
-			if not success then
-				warn('CRITICAL ERROR - NO DEFAULT THEME')
-				print(result2)
-			end
-			warn('issue rendering theme. no theme on file')
-			print(result)
-		end
+print(Theme)
+        local s,e = pcall(ChangeName,Theme)
+print("s")
 	end
         end
         
