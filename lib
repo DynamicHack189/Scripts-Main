@@ -709,7 +709,7 @@ local Notifications = Rayfield.Notifications
 
 local SelectedTheme = RayfieldLibrary.Theme.Default
 
-function ChangeTheme(Theme)
+local function ChangeTheme(Theme)
 	if typeof(Theme) == 'string' then
 		SelectedTheme = RayfieldLibrary.Theme[Theme]
 	elseif typeof(Theme) == 'table' then
